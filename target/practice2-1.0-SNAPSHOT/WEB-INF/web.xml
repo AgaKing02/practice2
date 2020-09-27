@@ -72,6 +72,18 @@
         <servlet-name>FileDownload</servlet-name>
         <url-pattern>/download</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Download</servlet-name>
+        <servlet-class>Controllers.DownloadFile</servlet-class>
+        <init-param>
+            <param-name>title</param-name>
+            <param-value>FileDownload</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Download</servlet-name>
+        <url-pattern>/load</url-pattern>
+    </servlet-mapping>
 
 
     <servlet>

@@ -1,0 +1,1 @@
+Product{ID=1, name='Whopper', description='beafburger', price=150, size='M', image_url='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/3-2018-cadillac-cts-v-jameslipman-slide2-1527109001.jpg?crop=1.00xw:0.822xh;0,0.154xh&resize=1200:*', category='Snacks'}
