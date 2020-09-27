@@ -17,8 +17,8 @@
         for (int i=0;i<products.size();i++){%>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center shadow rounded pt-5 my-5">
             <img src="<%=products.get(i).getImage_url()%>" style="height: 200px;max-width: 200px;">
-            <h2><%=products.get(i).getCategory()%></h2>
-            <p><%=products.get(i).getName()%></p>
+            <p><%=products.get(i).getCategory()%></p>
+            <h2><%=products.get(i).getName()%></h2>
             <p><b>Size:</b></p>
             <h4><%=products.get(i).getSize()%></h4>
             <h4><b>Price:</b></h4><br>

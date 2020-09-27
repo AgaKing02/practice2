@@ -23,7 +23,7 @@ public class Profile extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String name = (String) session.getAttribute("username");
-        if (name == null) {
+        if (name.isEmpty()) {
             response.sendRedirect(request.getContextPath()+"/login");
         } else {
             request.setAttribute("authuser", name);

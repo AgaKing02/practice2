@@ -1,0 +1,1 @@
+Product{ID=1, name='Cheeseburger', description='saccas', price=545, size='M', image_url='https://regnum.ru/uploads/pictures/news/2020/01/27/regnum_picture_1580108403_normal.jpg', category='Burgers'}

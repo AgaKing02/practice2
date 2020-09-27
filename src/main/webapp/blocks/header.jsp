@@ -14,6 +14,11 @@
         <a class="p-2 text-dark" href="<%=request.getContextPath()%>/">Main</a>
         <a class="p-2 text-dark" href="<%=request.getContextPath()%>/profile">My Profile</a>
         <a class="p-2 text-dark" href="<%=request.getContextPath()%>/about">About</a>
+        <a class="p-2 text-dark" href="<%=request.getContextPath()%>/upload">Upload</a>
+        <a class="p-2 text-dark" href="<%=request.getContextPath()%>/download">Download</a>
+        <a class="p-2 text-dark" href="<%=request.getContextPath()%>/create">Create</a>
+
+
     </nav>
     <a class="btn btn-outline-primary" href="<%=request.getContextPath()%>/login" >Sign in</a>
 

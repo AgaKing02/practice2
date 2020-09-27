@@ -47,5 +47,63 @@
         <servlet-name>About</servlet-name>
         <url-pattern>/about</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>FileUpload</servlet-name>
+        <servlet-class>Controllers.FileUpload</servlet-class>
+        <init-param>
+            <param-name>title</param-name>
+            <param-value>FileUpload</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUpload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FileDownload</servlet-name>
+        <servlet-class>Controllers.FileDownload</servlet-class>
+        <init-param>
+            <param-name>title</param-name>
+            <param-value>FileDownload</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileDownload</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>FileCreate</servlet-name>
+    <servlet-class>Controllers.CreateFile</servlet-class>
+    <init-param>
+        <param-name>FileCreate</param-name>
+        <param-value>FileCreate</param-value>
+    </init-param>
+</servlet>
+<servlet-mapping>
+<servlet-name>FileCreate</servlet-name>
+<url-pattern>/create</url-pattern>
+</servlet-mapping>
+
+
+
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>FileUpload</param-name>
+        <param-value>FileUpload</param-value>
+    </context-param>
+    <context-param>
+        <param-name>FileDownload</param-name>
+        <param-value>FileDownload</param-value>
+    </context-param>
+    <context-param>
+        <param-name>FileCreate</param-name>
+        <param-value>FileCreate</param-value>
+    </context-param>
 
 </web-app>
