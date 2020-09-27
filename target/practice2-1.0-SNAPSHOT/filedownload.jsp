@@ -7,9 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head><% String title = application.getInitParameter("FileDownload");%>
+<head><%String title = application.getInitParameter("FileDownload");%>
 
-    <title><%=title%></title>
+    <title><%=title%>
+    </title>
 </head>
 <body>
 <%File repo = (File) request.getAttribute("repository");%>
@@ -19,7 +20,7 @@
 <%for (File file : repo.listFiles()) {%>
 
 <form action="<%=request.getContextPath()+"/download"%>" method="post" name="form"
-      style="border: 1px solid yellow;text-align: center;">
+      style="background-color:#ececa4;text-align: center;">
     <input type="text" name="file" value="<%=file.getAbsolutePath()%>" style="display: none;">
     <p>File name</p>
     <p style="text-align: center;"><%=file.getName()%>
@@ -27,8 +28,12 @@
     <p>Size:</p>
     <p style="text-align: center;"><%=(double) file.length() / (1024 * 1024) + " mb"%>
     </p>
-    <a href="<%=file.getAbsolutePath().replace("\\","/")%>" download>Download</a>
-    <input style="background-color: red;color: white;" type="submit" value="Delete">
+
+    <input style="background-color: red;color: white;border-radius: 5px;" type="submit" value="Delete">
+</form>
+<form action="<%=request.getContextPath()+"/load"%>" method="post" name="download">
+    <input type="text" name="file" value="<%=file.getAbsolutePath()%>" style="display: none;">
+    <input style="background-color: greenyellow;color: white;border-radius: 5px;" type="submit" value="Download">
 </form>
 <br>
 <%}%>
